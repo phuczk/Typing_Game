@@ -1,0 +1,161 @@
+
+.wrapper{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.typing-text{
+    width: 100%;
+    height: 180px;
+    padding: 18px;
+    border: 1px solid #CCC;
+    border-radius: 9px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#typing-text_p span{
+    position: relative;
+}
+#typing-text_p span.correct{
+    color: rgb(50, 255, 50);
+}
+#typing-text_p span.incorrect{
+    background-color: rgb(252, 191, 191);
+    color: rgb(252, 92, 92);
+    outline: 1px solid #FFF;
+    border-radius: 3px;
+}
+/* #typing-text_p span.active {
+    color: rgb(50, 255, 50);
+
+} */
+#typing-text_p span.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(50, 255, 50);
+    opacity: 0;
+    animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+    50%{
+        opacity: 1;
+    }
+}
+.contentbox .content{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCC;
+}
+.content button{
+    margin-block-start: auto;
+    margin-block-end: auto;
+}
+.btnAgain{
+    height: 40px; background-color: orange; color: white; border: none; border-radius: 5px;
+}
+.btnAgain:hover{
+    background-color: rgb(255, 204, 109);
+    cursor: pointer;
+}
+.content .result-details{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+}
+.result-details li{
+    list-style: none;
+    display: flex;
+}
+.result-details span{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.calc-button{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.calc-button_tab{
+    width: 70px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-button_caspLock{
+    width: 81px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-button_enter{
+    width: 116px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-button_shift{
+    width: 110px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-button_shiftz{
+    width: 145px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-button_space{
+    width: 310px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-button_up{
+    width: 30px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-button_down{
+    width: 30px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.calc-buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+.calc-button :hover{
+    background-color: rgb(94, 255, 82);
+    color: white;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+
+.btnAdd{
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: rgb(18, 82, 243);
+    color: #FFF;
+    border: none;
+}
